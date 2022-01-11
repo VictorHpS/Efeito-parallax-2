@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900px;
+    color: black;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+
+main{
+    display: block;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 0px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+}
+
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom , rgba(0,0,0,0)0, rgba(0,0,0,0) 60%, black 100%);
+    background: -webkit-linear-gradient(to bottom , rgba(0,0,0,0)0, rgba(0,0,0,0) 60%, black 100%);;
+    background: linear-gradient(to bottom , rgba(0,0,0,0)0, rgba(0,0,0,0) 60%, black 100%);
+
+}
+
+
+section.module.parallax-1{
+    background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-2662116.jpg&fm=jpg');
+
+}
+
+section.module.parallax-2{
+    background-image: url('https://images.pexels.com/photos/2894366/pexels-photo-2894366.jpeg?cs=srgb&dl=pexels-sasha-prasastika-2894366.jpg&fm=jpg');
+
+}
+
+section.module.parallax-3{
+    background-image: url('https://images.pexels.com/photos/1592461/pexels-photo-1592461.jpeg?cs=srgb&dl=pexels-james-wheeler-1592461.jpg&fm=jpg');
+
+}
+
+section.module.parallax h1{
+    color: black;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-weight: 30;
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.637);
+    
+}
+
+
+
+
